@@ -16,7 +16,7 @@ const Details = ({position, company, time, address, work}) => {
                             return (
                                 <li key={index} className="p-2">
                                     <p style={{ textAlign: 'justify' }}>
-                                        <span style={{fontWeight: 'bold'}}>-  </span>{bullet}
+                                        <span style={{fontWeight: 'bold'}}>•  </span>{bullet}
                                     </p>
                                 </li>
                             )

@@ -33,7 +33,7 @@ export default function Home() {
 
               <div className='flex items-center self-start mt-2'>
                 <Link href="/dummy.pdf" download={true} target={"_blank"} className='flex items-start bg-dark p-2.5 px-6 rounded-lg text-lg hover:bg-light mx-2' style={{color: 'white'}}> 
-                  Resume <LinkArrow className='w-6 ml-1'/>
+                  Resume <LinkArrow className='w-4 ml-1'/>
                 </Link>
                 
                 <Link href="mailto:developer.dmitri@gmail.com" target={"_blank"} className='flex items-start bg-dark p-2.5 px-6 rounded-lg text-lg hover:bg-light mx-2' style={{color: 'white'}}> 
