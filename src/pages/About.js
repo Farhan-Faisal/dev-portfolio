@@ -48,21 +48,18 @@ const About = () => {
                     <div className='col-span-3 flex flex-col items-start justify-start'>
                         <h2 className='mb-4' style={{fontWeight: 'bold', opacity:'70%'}}>BIOGRAPHY</h2>
 
-                        <p className="" style={{font: 'medium'}}>
-                            Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
-                            and user-centered digital experiences. With 4 years of experience in the field. I am always looking for 
-                            new and innovative ways to bring my clients' visions to life.
-                        </p>
-                        
-                        <p className='my-4' style={{font: 'medium'}}>
-                            I believe that design is about more than just making things look pretty – it's about solving problems and 
-                            creating intuitive, enjoyable experiences for users. 
+                        <p className="" style={{font: 'medium', textAlign: 'justify' }}>
+                            Hi, I'm Farhan, a full stack developer with a strong passion for creating beautiful, functional, and user-centered digital experiences. With 2 years of experience,  I am always looking for new and innovative ways to bring my clients' visions to life
+
                         </p>
 
-                        <p className='' style={{font: 'medium'}}>
-                            Whether I'm working on a website, mobile app, or 
-                            other digital product, I bring my commitment to design excellence and user-centered thinking to 
-                            every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
+                        <p className='my-4' style={{font: 'medium', textAlign: 'justify' }}>
+                            In addition to web development, I have delved a lot into data science. In doing so, I have honed my skills in implementing data pipelines, analyzing large datasets, data visualization, and fine-tuning machine learning models. 
+
+                        </p>
+
+                        <p className='' style={{font: 'medium', textAlign: 'justify' }}>
+                            Whether I'm working on a website, mobile app, or other data pipelines, I bring my whole hearted commitment to every project I work on.
                         </p>
                     </div>
 

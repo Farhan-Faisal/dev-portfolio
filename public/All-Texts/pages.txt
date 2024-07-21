@@ -8,17 +8,13 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
 
 ABOUT PAGE:
 
-- Passion Fuels Purpose! 
-- Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
-and user-centered digital experiences. With 4 years of experience in the field. I am always looking for 
-new and innovative ways to bring my clients' visions to life.
+Hi, I'm Farhan, a full stack developer with a strong passion for creating beautiful, functional, and user-centered digital experiences. I hold an HBSc in Computer Science & Neuroscience from the University of Toronto, where I graduated with a cGPA of 3.93. My academic achievements were recognized with the UTSC International Scholar Award.
 
-- I believe that design is about more than just making things look pretty – it's about solving problems and 
-creating intuitive, enjoyable experiences for users. 
+With 2 years of experience,  I am always looking for new and innovative ways to bring my clients' visions to life
 
-- Whether I'm working on a website, mobile app, or 
-other digital product, I bring my commitment to design excellence and user-centered thinking to 
-every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
+In addition to web development, I have delved a lot into data analysis as well. As a Data Analyst at the Decision Neuroscience Lab, I have honed my skills in implementing data pipelines, analyzing large datasets with language models, and fine-tuning machine learning models for qualitative data labeling. 
+
+Whether I'm working on a website, mobile app, or other data pipelines, I bring my whole hearted commitment to every project I work on.
 
 --------------------------------------------------------------
 
