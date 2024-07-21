@@ -23,7 +23,7 @@ export default function Home() {
               <Image  src={profilePic} className='w-9/10 h-auto' />
             </div>
             <div className='w-7/12 h-full flex flex-col item-center self-center'>
-              <AnimatedText text="Turning Vision Into Reality With Code And Design" fontSize='60px'/>
+              <AnimatedText text="Turning Vision Into Reality With Code And Design" fontSize='60px' textAlign='left'/>
 
               <p className='my-4 text-base font-medium items-start'>
                 <span style={{ display: 'block' }}>- As a full-stack developer, I am dedicated to turning ideas into innovative web applications. </span>

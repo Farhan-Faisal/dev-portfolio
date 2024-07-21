@@ -29,10 +29,10 @@ const singleWord = {
 }
 
 
-export const AnimatedText =({text, fontSize=""}) => {
+export const AnimatedText =({text, className="", fontSize="", textAlign=""}) => {
     return (
-        <div className="w-full py-0 mx-auto flex items-center justify-center text-center overflow-hidden">
-            <motion.h1 style={{textColor: 'black', fontWeight: 'bold', fontSize: `${fontSize}`, textAlign: 'left'}} className='w-full inline-block capitalize'
+        <div className={`${className} w-full py-0 mx-auto flex items-center justify-center text-center overflow-hidden`}>
+            <motion.h1 style={{textColor: 'black', fontWeight: 'bold', fontSize: `${fontSize}`, textAlign: `${textAlign}`}} className='w-full inline-block capitalize'
             variants={quote}
             initial="initial"
             animate="animate">
