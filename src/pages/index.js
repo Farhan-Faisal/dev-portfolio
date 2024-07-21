@@ -26,9 +26,9 @@ export default function Home() {
               <AnimatedText text="Turning Vision Into Reality With Code And Design" fontSize='60px' textAlign='left'/>
 
               <p className='my-4 text-base font-medium items-start'>
-                <span style={{ display: 'block' }}>- As a full-stack developer, I am dedicated to turning ideas into innovative web applications. </span>
-                <span style={{ display: 'block' }}>- As a data analyst, I can also cater to your data insight needs. </span>
-                <span style={{ display: 'block' }}>- Explore my latest projects, showcasing my expertise in development and analysis. </span>
+                <span style={{ display: 'block' }}>• As a full-stack developer, I am dedicated to turning ideas into innovative web applications. </span>
+                <span style={{ display: 'block' }}>• As a data analyst, I can also cater to your data insight needs. </span>
+                <span style={{ display: 'block' }}>• Explore my latest projects, showcasing my expertise in development and analysis. </span>
               </p>
 
               <div className='flex items-center self-start mt-2'>
