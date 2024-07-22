@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Logo from './Logo'
-import {GithubIcon, LinkedinIcon, TwitterIcon} from './Icons'
+import {GithubIcon, LinkedinIcon, InstaIcon} from './Icons'
 import {motion} from 'framer-motion'
 
 const CustomLink = ({href, title, className=""}) => {
@@ -34,9 +34,9 @@ const NavBar = () => {
             </nav>
             
             <nav className="flex items-center justify-center flex-wrap">
-                <motion.a className='w-6 mr-3' href="https://twitter.com" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} > 
-                    <TwitterIcon /> 
-                </motion.a>
+                {/* <motion.a className='w-6 mr-3' href="https://www.instagram.com/farhanbinfaisal/" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} > 
+                    <InstaIcon /> 
+                </motion.a> */}
 
                 <motion.a className='w-6 mx-3' href="https://www.linkedin.com/in/farhanbinfaisal" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }}> 
                     <LinkedinIcon /> 

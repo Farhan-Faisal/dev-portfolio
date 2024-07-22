@@ -4,7 +4,10 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
-import article1 from '../../public/images/articles/pagination component in reactjs.jpg'
+
+import DTI_WAB_PIC from '../../public/images/research/DTI_WAB.png'
+import NBack_PIC from '../../public/images/research/NBack_Poster.png'
+
 import {motion} from 'framer-motion'
 
 const Framerimage = motion(Image);
@@ -52,20 +55,19 @@ const Research = () => {
         <Layout className='pt-16'>
           <AnimatedText text="My Research Works" className='mb-16' fontSize='60px' textAlign='center'/>
           <ul className='grid grid-cols-2 gap-16'>
+            
             <FeaturedArticle 
-              title="Build A Custom Pagination Component In Reactjs From Scratch"
-              summary=" Learn how to build a custom pagination component in ReactJS from scratch. 
-                        Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-              link="/"
-              img={article1}
+              title="Using Diffusion Tensor Imaging (DTI) Streamline Count To Predict Aphasia Scores"
+              summary="We quantified brain pathway damage and used that to diagnose language disorder in stroke patients "
+              link="https://github.com/Farhan-Faisal/DTI_WAB.git"
+              img={DTI_WAB_PIC}
             />
 
             <FeaturedArticle 
-              title="Build A Custom Pagination Component In Reactjs From Scratch"
-              summary=" Learn how to build a custom pagination component in ReactJS from scratch. 
-                        Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-              link="/"
-              img={article1}
+              title="Online Working Memory Training as a Treatment for Post-Stroke Aphasia"
+              summary=""
+              link="https://github.com/Farhan-Faisal/STM_N-Back_Training_Aphasia.git"
+              img={NBack_PIC}
             />
           </ul>
 
