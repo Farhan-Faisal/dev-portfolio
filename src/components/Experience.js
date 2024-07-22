@@ -39,35 +39,36 @@ const Experience = () => {
     <div className='mt-32'>
         <h2 className='w-full text-center' style={{fontSize: '50px', fontWeight: 'bold'}}>Experience</h2>
         <div ref={ref} className='w-[75%] mx-auto relative'>
-            <motion.div style={{scaleY: scrollYProgress}} className='absolute left-8 top-0 w-[4px] h-full bg-dark origin-top'/>
+            <motion.div style={{scaleY: scrollYProgress }} className='absolute left-8 top-0 w-[4px] h-full bg-dark origin-top'/>
 
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <Details
-                    position="Data Analyst" company="Decision Neuroscience Lab"
-                    time="Nov 2022 – Present" address="Ontario, Canada"
-                    work="Implemented data pipelines in Python, pulling data from an SQL database, and transforming it to given needs reducing manual workload by 50%. 
-                        •	Used LLMs via Python to calculate text similarity similarity on data sets of over 20,000 goal responses enabling investigation into human goal setting behaviors.
-                        •	Communicated findings from data analysis to stakeholders in plain language with appropriate visuals generated with Python attesting to communication skills. 
-                        •	Fine-tuned machine learning models (transformers) with PyTorch/TensorFlow to label qualitative data achieving 82% accuracy.
+                    position="Full Stack Developer Intern" company="University of Alberta"
+                    time="May 2024 – Aug 2024" address="Alberta, Canada"
+                    work="Developed a full stack Air Quality (AQHI) monitoring dashboard for the region of Edmonton to ensure children’s supervisors know when it is safe to play outside.
+                            • Used React for dashboard frontend, NodeJS for backend, & designed CosmosDB schemas (SQL) for data storage. 
+                            • Learned DevOps processes by creating a CI/CD pipeline via GitHub Actions to deploy application on Vercel (frontend) and Azure Functions (backend), reducing deployment times by 30%.
+                            • Communicated with non-technical clients to gather & document requirements (as user stories) for development.
+
                         "
                 />
 
                 <Details
                     position="Frontend Developer Intern" company="University of Alberta"
                     time="Jan 2023 – Apr 2023" address="Alberta, Canada"
-                    work="Developed a course scheduling web app following MVC architecture, integrating a JavaScript (ReactJS) front-end with a Java SpringBoot backend (REST API).
-                        •	Created a MySQL database of courses from unstructured course data (obtained from web scraping using Python) enhancing data accessibility by 50%.
-                        •	Set up a CI/CD pipeline using GitHub Actions for deployment on DockerHub (frontend) and AWS EC2 (backend) reducing deployment times by 60%. 
-                        •	Utilized version control (Git/GitHub) and followed Agile methodologies including the code review process ensuring smooth collaboration and feature development.
+                    work="Developed a course scheduling web app (in a team of 3 people) integrating a ReactJS frontend and Java SpringBoot backend (REST API). 
+                            • Created and executed unit test scripts via Selenium & Jest to ensure frontend and backend feature reliability.
+                            • Designed a MySQL database of courses from Python web scraped course data enhancing data accessibility by 50%. 
+                            • Utilized version control (Git/GitHub), followed AGILE practices (with Jira), and documented code, ensuring smooth collaboration and feature development.
+
                         "
                 />
 
                 <Details
-                    position="Coop – Research Assistant" company="Baycrest Hospital"
-                    time="Aug 2022 – Dec 2022" address="Toronto, ON, Canada"
-                    work="Designed web based interactive study paradigms using JavaScript. 
-                        •	Managed a MySQL data base to efficiently store and retrieve healthcare data.
-                        •	Created Linux tcsh/bash & C++ scripts for neuroimaging data processing
+                    position="Coop- Systems Analyst" company="Fairmont Banff Springs"
+                    time="May 2023 – Aug 2023" address="Alberta, Canada"
+                    work="Created Linux Shell scripts to automate MySQL database updates reducing manual workload by 50%.
+                            • Troubleshoot IT tickets skills related to numerous hardware/firmware problems (desktop setups, Hubs, and switches) within a 24-hour turnaround time.
                         "
                 />
 

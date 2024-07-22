@@ -3,6 +3,7 @@ import { AnimatedText } from '@/components/AnimatedText'
 import { Layout } from '@/components/Layout'
 import React, { useEffect, useRef } from 'react'
 import profilePic from '../../public/images/profile/comic-pic.png'
+import bushraPic from "../../public/images/profile/bushra_profile_pic.png"
 import Image from 'next/image'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '../components/Skills'
@@ -37,7 +38,7 @@ const About = () => {
   return (
     <>
         <Head>
-            <title> Farhan | About Page </title>
+            <title> Bushra | About Page </title>
             <meta name='description' description='any'></meta>
         </Head>
         <main className='flex w-full flex-col items-center justify-center self-center'>
@@ -49,22 +50,22 @@ const About = () => {
                         <h2 className='mb-4' style={{fontWeight: 'bold', opacity:'70%'}}>BIOGRAPHY</h2>
 
                         <p  style={{font: 'medium', textAlign: 'justify' }}>
-                            Hi, I&apos;m Farhan, a full stack developer with a strong passion for creating beautiful, functional, and user-centered digital experiences. With 2 years of experience,  I am always looking for new and innovative ways to bring my clients&apos; visions to life
+                            Hi, I&apos;m Fahrin, a full stack developer with a strong passion for creating beautiful, functional, and user-centered digital experiences. With 2 years of experience,  I am always looking for new and innovative ways to bring my clients&apos; visions to life
                         </p>
 
                         <p className='my-4' style={{font: 'medium', textAlign: 'justify' }}>
-                            In addition to web development, I have delved a lot into data science. In doing so, I have honed my skills in implementing data pipelines, analyzing large datasets, data visualization, and fine-tuning machine learning models. 
+                            In addition to web development, I have delved a little into machine learning too. In doing so, I have honed my skills in data cleaning, visualization, and analysis.
 
                         </p>
 
                         <p className='' style={{font: 'medium', textAlign: 'justify' }}>
-                            Whether I&apos;m working on a website, mobile app, or other data pipelines, I bring my whole hearted commitment to every project I work on.
+                            Whether I&apos;m working on a website, mobile app, or data pipelines, I bring my whole hearted commitment to every project I work on.
                         </p>
                     </div>
 
                     <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark p-8 bg-light'>
                         <div className='absolute top-0 -right-3 z-[-10] w-[102%] h-[103%] rounded-[2rem] bg-dark'/>
-                        <Image src={profilePic} alt={"_blank"} className= 'w-full h-auto rounded-2xl'/>
+                        <Image src={bushraPic} alt={"_blank"} className= 'w-full h-auto rounded-2xl'/>
                     </div>
 
                     <div className='col-span-2 flex flex-col justify-between'>

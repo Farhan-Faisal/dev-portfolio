@@ -38,11 +38,11 @@ const NavBar = () => {
                     <InstaIcon /> 
                 </motion.a> */}
 
-                <motion.a className='w-6 mx-3' href="https://www.linkedin.com/in/farhanbinfaisal" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }}> 
+                <motion.a className='w-6 mx-3' href="https://www.linkedin.com/in/fahrin" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }}> 
                     <LinkedinIcon /> 
                 </motion.a>
 
-                <motion.a className='w-6 ml-3' href="https://github.com/Farhan-Faisal" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }}> 
+                <motion.a className='w-6 ml-3' href="https://github.com/Fahrin0802" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }}> 
                     <GithubIcon /> 
                 </motion.a>
             </nav>

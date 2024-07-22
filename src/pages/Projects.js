@@ -97,7 +97,7 @@ const Projects = () => {
   return (
     <>
         <Head>
-            <title> Farhan | Projects Page </title>
+            <title> Bushra | Projects Page </title>
             <meta name='description' description='project list full stack developer'></meta>
         </Head>
         <main className='mb-16 flex w-full flex-col items-center justify-center self-center'>

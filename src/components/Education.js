@@ -40,19 +40,13 @@ const Education = () => {
     <div className='mt-32'>
         <h2 className='w-full text-center' style={{fontSize: '50px', fontWeight: 'bold'}}>Education</h2>
         <div ref={ref} className='w-[75%] mx-auto relative'>
-            <motion.div style={{scaleY: scrollYProgress}} className='absolute left-8 top-0 w-[4px] h-full bg-dark origin-top'/>
+            <motion.div style={{scaleY: scrollYProgress }} className='absolute left-8 top-[40px] w-[4px] h-full bg-dark origin-top'/>
 
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <EduDetails
-                    type="HBSc in Computer Science & Neuroscience"
-                    time="2020-2024" place="University of Toronto"
-                    info="cGPA: 3.94; Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
-                />
-
-                <EduDetails
-                    type="Masters in Data Science"
-                    time="2024-2025" place="University of British Columbia"
-                    info="cGPA: N/A"
+                    type="BSc in Computer Engineering"
+                    time="2020-2025" place="University of Alberta"
+                    info="cGPA: 3.0; Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
                 />
 
             </ul>
