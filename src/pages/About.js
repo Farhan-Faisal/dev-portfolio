@@ -48,9 +48,8 @@ const About = () => {
                     <div className='col-span-3 flex flex-col items-start justify-start'>
                         <h2 className='mb-4' style={{fontWeight: 'bold', opacity:'70%'}}>BIOGRAPHY</h2>
 
-                        <p className="" style={{font: 'medium', textAlign: 'justify' }}>
-                            Hi, I'm Farhan, a full stack developer with a strong passion for creating beautiful, functional, and user-centered digital experiences. With 2 years of experience,  I am always looking for new and innovative ways to bring my clients' visions to life
-
+                        <p  style={{font: 'medium', textAlign: 'justify' }}>
+                            Hi, I'm Farhan, a full stack developer with a strong passion for creating beautiful, functional, and user-centered digital experiences. With 2 years of experience,  I am always looking for new and innovative ways to bring my clients&apos; visions to life
                         </p>
 
                         <p className='my-4' style={{font: 'medium', textAlign: 'justify' }}>

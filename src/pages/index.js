@@ -20,7 +20,7 @@ export default function Home() {
         <Layout className='pt-0 mt-0'>
           <div className="flex items-center justify-between w-full">
             <div className='w-5/12'>
-              <Image  src={profilePic} className='w-9/10 h-auto' />
+              <Image  src={profilePic} alt={'_blank'} className='w-9/10 h-auto' />
             </div>
             <div className='w-7/12 h-full flex flex-col item-center self-center'>
               <AnimatedText text="Turning Vision Into Reality With Code And Design" fontSize='60px' textAlign='left'/>
@@ -33,7 +33,7 @@ export default function Home() {
 
               <div className='flex items-center self-start mt-2'>
                 <Link href="/dummy.pdf" download={true} target={"_blank"} className='flex items-start bg-dark p-2.5 px-6 rounded-lg text-lg hover:bg-light mx-2' style={{color: 'white'}}> 
-                  Resume <LinkArrow className='w-4 ml-1'/>
+                  Resume <LinkArrow className='w-5 ml-1'/>
                 </Link>
                 
                 <Link href="mailto:developer.dmitri@gmail.com" target={"_blank"} className='flex items-start bg-dark p-2.5 px-6 rounded-lg text-lg hover:bg-light mx-2' style={{color: 'white'}}> 
