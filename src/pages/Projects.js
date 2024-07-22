@@ -6,6 +6,9 @@ import Link from 'next/link'
 import { GithubIcon } from '@/components/Icons'
 import project1Img from '../../public/images/projects/crypto-screener-cover-image.jpg'
 import Image from 'next/image'
+import {motion} from 'framer-motion'
+
+const Framerimage = motion(Image);
 
 const FeaturedProject = ({type, title, summary, img, link, githubLink}) => {
     return (
@@ -16,7 +19,10 @@ const FeaturedProject = ({type, title, summary, img, link, githubLink}) => {
             <div className='absolute top-0 -right-3 z-[-10] w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl'/>
             
             <Link href={link} target={"_blank"} className="w-1/2 cursor-pointer overflow-hidden rounded-lg">
-                <Image src={img} alt={title} className="w-full h-auto"/>
+                <Framerimage src={img} alt={title} className="w-full h-auto"
+                whileHover={{scale: 1.1}}
+                transition={{duration: 0.2}}
+                />
             </Link>
 
             <div className="w-1/2 flex flex-col items-start justify-between pl-6">
@@ -51,7 +57,10 @@ const Project = ({type, title, img, link, githubLink}) => {
             <div className='absolute top-0 -right-3 z-[-10] w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl'/>
             
             <Link href={link} target={"_blank"} className="w-full cursor-pointer overflow-hidden rounded-lg">
-                <Image src={img} alt={title} className="w-full h-auto"/>
+                <Framerimage src={img} alt={title} className="w-full h-auto"
+                whileHover={{scale: 1.1}}
+                transition={{duration: 0.2}}
+                />
             </Link>
 
             <div className="w-full flex flex-col items-start justify-between mt-4">
