@@ -118,9 +118,21 @@ const Projects = () => {
                         />
                     </div>
 
+                    <div className='col-span-12'>
+                        <FeaturedProject 
+                            title="Course Scheduler"
+                            link="https://github.com/Farhan-Faisal/ENGG_Timetable.git"
+                            summary=""
+                            githubLink="https://github.com/Farhan-Faisal/ENGG_Timetable.git"
+                            type="Project"
+                            video="https://github.com/Farhan-Faisal/ENGG_Timetable_Demo/assets/77621905/cecbcfc9-8b7d-49f6-ad74-9c6a50358ce6"
+                            img="https://github.com/user-attachments/assets/4cd8c958-3781-4137-b442-7b2b9615e2dc"
+                        />
+                    </div>
+
                     <div className='col-span-6'>
                         <Project 
-                            title="Course Scheduler"
+                            title="Inventory Manager"
                             link="https://github.com/Farhan-Faisal/ENGG_Timetable.git"
                             githubLink="https://github.com/Farhan-Faisal/ENGG_Timetable.git"
                             type="Project"
@@ -128,31 +140,6 @@ const Projects = () => {
                             img="https://github.com/user-attachments/assets/4cd8c958-3781-4137-b442-7b2b9615e2dc"
                         />
                     </div>
-                    <div className='col-span-6'>
-                        <Project 
-                            title="Student Org Task Manager"
-                            link="https://github.com/Farhan-Faisal/MEDLIFE_APP.git"
-                            githubLink="https://github.com/Farhan-Faisal/MEDLIFE_APP.git"
-                            type="Project"
-                            video="https://github.com/Farhan-Faisal/MEDLIFE_APP/assets/77621905/26c32662-cdc4-4ba9-a71e-bb1ff9e4e386"
-                            img="https://github.com/user-attachments/assets/1cc04cdb-7cca-4d45-83da-7d606d1ea52e"
-                        />
-                    </div>
-
-                    <div className='col-span-12'>
-                        <FeaturedProject 
-                            title="GoGo - Better With You"
-                            summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                    local currency."
-                            link="https://github.com/Farhan-Faisal/GOGO_MERN.git"
-                            githubLink="https://github.com/Farhan-Faisal/GOGO_MERN.git"
-                            type="Featured Project"
-                            video="https://github.com/Farhan-Faisal/GOGO_MERN/assets/77621905/6be8f11e-0026-4efd-9241-04540c6c3fb7"
-                            img="https://github.com/user-attachments/assets/af8a5bc1-4122-4382-ab17-30ed0ccb1154"
-                        />
-                    </div>
-
                     <div className='col-span-6'>
                         <Project 
                             title="Simple Navigation Tool"
@@ -163,7 +150,6 @@ const Projects = () => {
                             video="https://github.com/user-attachments/assets/57b66387-7118-418e-bb70-691d9acbc674"
                         />
                     </div>
-
                 </div>
             </Layout>
         </main>
