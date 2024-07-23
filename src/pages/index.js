@@ -32,7 +32,7 @@ export default function Home() {
               </p>
 
               <div className='flex items-center self-start mt-2'>
-                <Link href="/dummy.pdf" download={true} target={"_blank"} className='flex items-start bg-dark p-2.5 px-6 rounded-lg text-lg hover:bg-light mx-2' style={{color: 'white'}}> 
+                <Link href="https://drive.google.com/file/d/18z01diH5sT2Ie95nq8TIQv0cSwV3ZmOM/view?usp=share_link" download={true} target={"_blank"} className='flex items-start bg-dark p-2.5 px-6 rounded-lg text-lg hover:bg-light mx-2' style={{color: 'white'}}> 
                   Resume &#x279A;
                 </Link>
                 

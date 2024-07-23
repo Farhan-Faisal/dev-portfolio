@@ -110,8 +110,8 @@ const Projects = () => {
                             title="Air Quality Monitoring Dashboard"
                             summary="A feature-rich Air quality monitoring dashboard made using ReactJS, Tailwind CSS, PurpleAir API, Leaflet, & Azure Cloud. 
                                     It shows all Purple Air and AQHI monitoring stations in Edmonton and shows the nearest three sensors according to your location."
-                            link="https://air-quality-dashboard-daycare.vercel.app"
-                            githubLink="/"
+                            link="https://air-quality-dashboard-pi.vercel.app"
+                            githubLink="https://github.com/Fahrin0802/air_quality_dashboard.git"
                             type="Featured Project"
                             img="https://github.com/user-attachments/assets/3d794c3c-9d82-4f05-a25f-cddc961c346f"
                             video="https://github.com/user-attachments/assets/1b72fc46-bdc7-4ae5-9080-9006b8e52092"
