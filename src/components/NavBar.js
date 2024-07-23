@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Logo from './Logo'
@@ -24,8 +24,20 @@ const CustomLink = ({href, title, className=""}) => {
 }
 
 const NavBar = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+    const handle_click = () => {
+        setIsOpen(!isOpen);
+    }
+
     return (
         <header className='w-full px-32 py-8 font-medium flex items-center justify-between'> 
+
+            <button className="flex-col justify-center items-center hidden lg:flex" onClick={handle_click}> 
+                <span className={`bg-dark block transition-all duration-3000 ease-out h-0.5 w-6 rounded-sm  ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}` } ></span>
+                <span className={` block h-0.5 w-6 transition-all duration-3000 ease-out rounded-sm m-0.5 ${isOpen ? 'bg-light' : 'bg-dark'}`}></span>
+                <span className={`bg-dark block h-0.5 w-6 transition-all duration-3000 ease-out rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}` }></span>
+            </button>
             <nav>
                 <CustomLink href="/" title="Home" className='mr-4' /> 
                 <CustomLink href="/About"  title="About" className='mx-4'/> 

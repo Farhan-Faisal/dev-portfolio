@@ -24,6 +24,8 @@ const FeaturedProject = ({type, title, summary, video, img, link, githubLink}) =
                     whileHover={{scale: 1.1}}
                     transition={{duration: 0.2}}
                     controls
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
             {/* </Link> */}
 
