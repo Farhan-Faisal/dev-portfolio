@@ -122,7 +122,8 @@ const Projects = () => {
                         <FeaturedProject 
                             title="Course Scheduler"
                             link="https://github.com/Farhan-Faisal/ENGG_Timetable.git"
-                            summary=""
+                            summary="Application allows students at the University of Alberta to Visualize their Timetables for the Semester. 
+                            App is coded in ReactJS & Java SpringBoot and makes used of interactive featues such as Drag and Drop, Tooltips, Drodown Menus, etc"
                             githubLink="https://github.com/Farhan-Faisal/ENGG_Timetable.git"
                             type="Project"
                             video="https://github.com/Farhan-Faisal/ENGG_Timetable_Demo/assets/77621905/cecbcfc9-8b7d-49f6-ad74-9c6a50358ce6"
