@@ -1,76 +1,138 @@
-import React, { useState } from 'react';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
-import Logo from './Logo';
-import { GithubIcon, LinkedinIcon } from './Icons';
-import { motion } from 'framer-motion';
+
+import {motion} from 'framer-motion'
+import Link from "next/link";
+import React, { useState } from "react";
+import Logo from "./Logo";
+import { useRouter } from "next/router";
+import {
+  GithubIcon,
+  LinkedInIcon,
+} from "./Icons";
+
 
 const CustomLink = ({ href, title, className = "" }) => {
-    const router = useRouter();
-    return (
-        <Link href={href} className={`${className} relative group`}>
-            {title}
-            <span className={`
-                h-[2px] inline-block bg-dark
-                absolute left-0 -bottom-0.5
-                transition-[width] ease duration-300
-                ${router.asPath === href ? 'w-full' : 'w-0'}
-                group-hover:w-full
-            `}
-            >&nbsp;</span>
-        </Link>
-    )
-}
+  const router = useRouter();
 
-const NavBar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const handleClick = () => {
-        setIsOpen(!isOpen);
+  return (
+    <Link href={href} className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`}>
+      {title}
+      <span
+        className={`
+              inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
+              group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+              ${router.asPath === href ? "w-full" : " w-0"} lg:bg-light lg:dark:bg-dark
+              `}
+      >
+        &nbsp;
+      </span>
+    </Link>
+  );
+};
+
+const CustomMobileLink = ({ href, title, className = "", toggle }) => {
+  const router = useRouter();
+
+  const handleClick = () =>{
+    toggle();
+    router.push(href) 
+  }
+
+  return (
+    <button className={`${className}  rounded relative group lg:text-dark lg:dark:text-dark`} onClick={handleClick}>
+      {title}
+      <span
+        className={`
+              inline-block h-[1px] absolute left-0 -bottom-0.5 
+              group-hover:w-full transition-[width] ease duration-300 bg-dark
+              ${router.asPath === href ? "w-full" : " w-0"} 
+              `}
+      >
+        &nbsp;
+      </span>
+    </button>
+  );
+};
+
+
+
+const Navbar = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
+
+
+  return (
+    <header className="w-full flex items-center justify-between px-32 py-8 font-medium z-10 dark:text-light
+    lg:px-16 relative z-1 md:px-12 sm:px-8
+    ">
+      
+      <button
+        type="button"
+        className=" flex-col items-center justify-center hidden lg:flex"
+        aria-controls="mobile-menu"
+        aria-expanded={isOpen}
+        onClick={handleClick}
+      >
+        <span className="sr-only">Open main menu</span>
+        <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+        <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${isOpen ? 'opacity-0' : 'opacity-100'} my-0.5`}></span>
+        <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
+      </button>
+
+      <div className="w-full flex justify-between items-center lg:hidden">
+        <nav className="flex items-center justify-center">
+            <CustomLink className="mr-4" href="/" title="Home" />
+            <CustomLink className="mx-4" href="/About" title="About" />
+            <CustomLink className="mx-4" href="/Projects" title="Projects" />
+            <CustomLink className="ml-4" href="/Research" title="Articles" />
+        </nav>
+        <nav className="flex items-center justify-center flex-wrap lg:mt-2 ">
+            <motion.a className='w-6 mx-3' href="https://www.linkedin.com/in/farhanbinfaisal" target={"_blank"} whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
+                <LinkedInIcon />
+            </motion.a>
+            <motion.a className='w-6 ml-3' href="https://github.com/Farhan-Faisal" target={"_blank"} whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
+                <GithubIcon />
+            </motion.a>
+        </nav>
+      </div>
+    {
+      isOpen ? 
+
+      <motion.div className="min-w-[70vw] sm:min-w-[90vw] flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+        py-32 bg-light/75 rounded-lg z-50 backdrop-blur-md
+        "
+        initial={{scale:0,x:"-50%",y:"-50%", opacity:0}}
+        animate={{scale:1,opacity:1}}
+        >
+        <nav className="flex items-center justify-center flex-col">
+            <CustomMobileLink toggle={handleClick} className="mr-4 lg:m-0 lg:my-2" href="/" title="Home" />
+            <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/about" title="About" />
+            <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/projects" title="Projects" />
+            <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/articles" title="Articles" />
+        </nav>
+
+        <nav className="flex items-center justify-center  mt-2">
+            <motion.a className='w-6 mx-3' href="https://www.linkedin.com/in/farhanbinfaisal" target={"_blank"} whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
+                <LinkedInIcon />
+            </motion.a>
+            <motion.a className='w-6 ml-3' href="https://github.com/Farhan-Faisal" target={"_blank"} whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
+                <GithubIcon />
+            </motion.a>
+        </nav>
+      </motion.div>
+
+      : null
     }
 
-    return (
-        <header className='w-full px-8 md:px-16 lg:px-32 py-8 font-medium flex items-center justify-between relative'>
-            {/* Hamburger Button */}
-            <button className="flex-col justify-center items-center lg:hidden" onClick={handleClick}>
-                <span className={`bg-dark block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
-                <span className={`bg-dark block h-0.5 w-6 transition-all duration-300 ease-out rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-                <span className={`bg-dark block h-0.5 w-6 transition-all duration-300 ease-out rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
-            </button>
+      <div className="absolute left-[50%] top-2 translate-x-[-50%] ">
+        <Logo />
+      </div>
+    </header>
+  );
+};
 
-            {/* Navigation Links (hidden on small screens) */}
-            <nav className='hidden lg:flex'>
-                <CustomLink href="/" title="Home" className='mr-4' />
-                <CustomLink href="/About" title="About" className='mx-4' />
-                <CustomLink href="/Projects" title="Projects" className='mx-4' />
-                <CustomLink href="/Research" title="Research" className='ml-4' />
-            </nav>
-
-            {/* Mobile Navigation Menu */}
-            {isOpen && (
-                <nav className="flex flex-col items-center justify-center lg:hidden absolute top-full left-0 w-full bg-white z-10 p-4">
-                    <CustomLink href="/" title="Home" className='my-2' />
-                    <CustomLink href="/About" title="About" className='my-2' />
-                    <CustomLink href="/Projects" title="Projects" className='my-2' />
-                    <CustomLink href="/Research" title="Research" className='my-2' />
-                </nav>
-            )}
-
-            {/* Social Icons */}
-            <nav className="flex items-center justify-center flex-wrap">
-                <motion.a className='w-6 mx-3' href="https://www.linkedin.com/in/farhanbinfaisal" target={"_blank"} whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
-                    <LinkedinIcon />
-                </motion.a>
-                <motion.a className='w-6 ml-3' href="https://github.com/Farhan-Faisal" target={"_blank"} whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
-                    <GithubIcon />
-                </motion.a>
-            </nav>
-
-            {/* Logo */}
-            <div className="absolute left-[50%] top-2 translate-x-[-50%]">
-                <Logo />
-            </div>
-        </header>
-    )
-}
-
-export default NavBar;
+export default Navbar;

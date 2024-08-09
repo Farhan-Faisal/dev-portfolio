@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import {motion} from "framer-motion"
 
 const Skill =({value, x, y}) => {
@@ -16,14 +16,24 @@ const Skill =({value, x, y}) => {
 }
 
 const Skills = () => {
-  return (
-    <>
-        <h2 className='mt-32 w-full text-center' style={{fontSize: '50px', fontWeight: 'bold'}}>Skills</h2>
-        <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight'>
-            <motion.div className='flex items-center justify-center rounded-full bg-dark p-8 shadow-dark' 
-                style={{color: 'white', fontWeight: 'bold'}}
-                whileHover={{scale: 1.05}}
-            >
+    const ref = useRef(null);
+    return (
+        <>
+        <h2 className="font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32">
+          Skills
+        </h2> 
+        <div
+            ref={ref}
+            className="w-full h-[100vh] relative bg-circularLight dark:bg-circularDark  flex items-center justify-center 
+            mb-64 md:mb-32 rounded-full
+            lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd 
+            sm:bg-circularLightSm sm:dark:bg-circularDarkSm lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] 
+            "
+        >
+     
+            <motion.div whileHover={{scale:1.05}} className="cursor-pointer flex rounded-full font-semibold bg-dark text-light p-8 shadow-dark
+                dark:bg-light dark:text-dark lg:p-6 md:p-4 xs:text-xs xs:p-2
+                ">
                 Web
             </motion.div>
 
