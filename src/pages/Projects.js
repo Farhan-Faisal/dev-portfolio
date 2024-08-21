@@ -129,6 +129,18 @@ const Projects = () => {
                         />
                     </div>
 
+                    <div className='col-span-12'>
+                        <FeaturedProject 
+                            title="GoGo - Chat with Friends"
+                            summary="A secure realtime chat application made using the MERN stack and socket.io. Application deployed on vercel (frontend) and AWS EC2 (backend)"
+                            link="https://gogo-chat.vercel.app"
+                            githubLink="https://github.com/Farhan-Faisal/GOGO_MERN.git"
+                            type="Featured Project"
+                            video="https://github.com/Farhan-Faisal/GOGO_MERN/assets/77621905/6be8f11e-0026-4efd-9241-04540c6c3fb7"
+                            img="https://github.com/user-attachments/assets/af8a5bc1-4122-4382-ab17-30ed0ccb1154"
+                        />
+                    </div>
+
                     <div className='col-span-6'>
                         <Project 
                             title="Course Scheduler"
@@ -149,21 +161,6 @@ const Projects = () => {
                             img="https://github.com/user-attachments/assets/1cc04cdb-7cca-4d45-83da-7d606d1ea52e"
                         />
                     </div>
-
-                    <div className='col-span-12'>
-                        <FeaturedProject 
-                            title="GoGo - Better With You"
-                            summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                    local currency."
-                            link="https://github.com/Farhan-Faisal/GOGO_MERN.git"
-                            githubLink="https://github.com/Farhan-Faisal/GOGO_MERN.git"
-                            type="Featured Project"
-                            video="https://github.com/Farhan-Faisal/GOGO_MERN/assets/77621905/6be8f11e-0026-4efd-9241-04540c6c3fb7"
-                            img="https://github.com/user-attachments/assets/af8a5bc1-4122-4382-ab17-30ed0ccb1154"
-                        />
-                    </div>
-
                     <div className='col-span-6'>
                         <Project 
                             title="Simple Navigation Tool"
