@@ -1,0 +1,83 @@
+FARHAN BIN FAISAL
+
+Vancouver, BC, Canada | 647-895-6771 |
+LinkedIn: in/farhanbinfaisal | GitHub: https://github.com/Farhan-Faisal | Portfolio: https://dev-farhan.vercel.app
+
+SUMMARY
+_
+Innovative web developer with strong expertise in JavaScript, React, and Node.js, complemented by proficiency
+in NoSQL (MongoDB). Demonstrated ability to design and implement scalable applications using cloud platforms
+(AWS & GCP), streamline deployment processes (CI/CD), and enhance user experiences through robust testing.
+EDUCATION
+MS, Data Science, University of British Columbia
+HBSc, Computer Science & Neuroscience, University of Toronto
+
+Expected Graduation: June 2025
+Graduation: June 2024
+
+TECHNICAL SKILLS
+• Programming: JavaScript (React, Angular, Node), Java, Swift, HTML/CSS, C++, Python, Bash
+• Testing Tools: Selenium, Jest, JUnit, PyTest, Mockito, Espresso
+• Databases & Cloud Tools: MongoDB (NoSQL), MySQL, PostgreSQL, GitHub Actions, AWS, Docker, Azure
+EXPERIENCE
+Developer Intern
+Baycrest Hospital
+
+•
+•
+•
+•
+
+Aug 2022 – Apr 2023
+Toronto, ON, Canada
+
+Developed interactive web-based experiment paradigms with JavaScript & NeuroBS for 3 language studies.
+
+Created data preprocessing pipelines using Python, Bash & C++, reducing manual workload by 50%.
+Analyzed neuroimaging datasets via pandas and scikit-learn, identifying trends between structural
+damage and language impairments, contributing to automated aphasia diagnostic tools.
+Streamlined healthcare administration processes by managing a NoSQL database and automating data
+processing tasks, reducing admin work by 30%.
+
+Data Analyst
+May 2023 – Apr 2024
+University of Toronto
+Toronto, ON, Canada
+• Developed ETL pipelines in Python & SQL to clean large textual survey datasets, improving operational
+efficiency by 60%.
+• Utilized Python and GPT-4 embedding models to encode textual responses, enabling deeper
+investigation into human goal-setting behaviors.
+• Enhanced data quality through imputation using KNN, linear regression, and logistic regression models,
+ensuring more accurate analysis.
+• Created data visualizations with ggplot2 and Matplotlib, to present complex analysis results.
+• Fine-tuned transformer models (BERT) with PyTorch to label qualitative data with 82% accuracy.
+PROJECTS
+GOGO | MongoDB Express ReactJS NodeJS
+May 2023- Aug 2023
+• Developed a secure, real-time chat app (team of 5) connecting strangers using the MERN stack.
+• Built frontend with ReactJS, backend with Express.js (REST APIs), and managed data storage
+with MongoDB (NoSQL).
+• Achieved 60% test coverage with Selenium and Jest, ensuring robustness for frontend feature.
+• Reduced deployment times by 70% via setting up a CI/CD pipeline via GitHub Actions on AWS EC2.
+PM2.5 Dashboard | TypeScript, ReactJS, Express, NodeJS
+Jul 2024 – Aug 2024
+• Developed a PM2.5 smoke particle visualization dashboard, enabling users to monitor nearby air quality
+in real time.
+• Visualized real-time and longitudinal air quality trends with React, Leaflet, and D3.js.
+• Created backend to ExpressJS and database to SQLite for improved flexibility and scalability.
+• Deployed the lightweight backend to Azure Cloud ensuring cost efficiency and scalability.
+Stock Visualizer App | MongoDB Express ReactJS NodeJS
+Dec 2022 - Apr 2023
+• Developed a web application using Next.js with an Express backend, allowing clients to visualize
+historical stock price data.
+• Adhered to Atomic Design principles and AGILE methodologies to ensure maintainable code.
+• Deployed the optimized backend on Render.com, ensuring a cost-effective and scalable solution.
+RELEVANT COURSES______________________________________________________________________
+Intro to Software Engineering
+Software Design and Testing
+Software Systems Architecture
+Intro to Machine Learning
+Cloud Platforms for Data Science
+Data Visualization
+
+
