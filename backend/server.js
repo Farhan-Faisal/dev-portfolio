@@ -4,7 +4,6 @@ const { Configuration, OpenAIApi } = require('openai');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const readline = require('readline');
 
 const { 
     OPENAI_API_KEY, 
@@ -104,7 +103,7 @@ app.post('/chat', async (req, res) => {
 
     const aiAnswer = gptResponse.data.choices[0].text.trim();
     res.json({ answer: aiAnswer });
-    
+
   } catch (error) {
     console.error('Error in /chat endpoint:', error);
     res.status(500).json({ error: 'An error occurred while processing your request.' });
