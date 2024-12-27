@@ -11,9 +11,7 @@ const BasicModal = () => {
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
   const [messageList, setMessageList] = useState([
-    {message: "Hello", sender: "bot"},
-    {message: "Skills?", sender: "user"},
-    {message: "JavaScript", sender: "bot"}
+    {message: "Hi, how may I help you today?", sender: "bot"}
   ]);
   const containerRef = useRef(null);
 

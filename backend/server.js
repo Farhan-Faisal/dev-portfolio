@@ -89,7 +89,7 @@ app.post('/chat', async (req, res) => {
     const prompt = `You are an AI assistant. Use the following information to answer the question.\n\n${context}\n\nUser Question: ${userMessage}\nAI Answer:`
     console.log(prompt);
 
-    // Generate response using OpenAI's GPT with the retrieved context
+    // Generate response using GPT-4 with the retrieved context
     const gptResponse = await openai.createCompletion({
       model: 'gpt-3.5-turbo-instruct',
       prompt: prompt,
