@@ -86,7 +86,7 @@ app.post('/chat', async (req, res) => {
     }
 
     const context = queryResult.map((match) => match.metadata.text).join('\n');
-    const prompt = `You are an AI assistant. Use the following information to answer the question.\n\n${context}\n\nUser Question: ${userMessage}\nAI Answer:`
+    const prompt = `You are an AI assistant. Use the following information to answer the question (Act that you are me).\n\n${context}\n\nUser Question: ${userMessage}\nAI Answer:`
     console.log(prompt);
 
     // Generate response using GPT-4 with the retrieved context

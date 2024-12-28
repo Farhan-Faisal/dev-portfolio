@@ -1,57 +1,17 @@
 
 import {motion} from 'framer-motion'
-import Link from "next/link";
 import React, { useState } from "react";
-import Logo from "./Logo";
-import { useRouter } from "next/router";
+import Logo from "../atoms/Logo";
+
 import {
   GithubIcon,
   LinkedInIcon,
-} from "./Icons";
+} from "../atoms/Icons";
 
-
-const CustomLink = ({ href, title, className = "" }) => {
-  const router = useRouter();
-
-  return (
-    <Link href={href} className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`}>
-      {title}
-      <span
-        className={`
-              inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
-              group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-              ${router.asPath === href ? "w-full" : " w-0"} lg:bg-light lg:dark:bg-dark
-              `}
-      >
-        &nbsp;
-      </span>
-    </Link>
-  );
-};
-
-const CustomMobileLink = ({ href, title, className = "", toggle }) => {
-  const router = useRouter();
-
-  const handleClick = () =>{
-    toggle();
-    router.push(href) 
-  }
-
-  return (
-    <button className={`${className}  rounded relative group lg:text-dark lg:dark:text-dark`} onClick={handleClick}>
-      {title}
-      <span
-        className={`
-              inline-block h-[1px] absolute left-0 -bottom-0.5 
-              group-hover:w-full transition-[width] ease duration-300 bg-dark
-              ${router.asPath === href ? "w-full" : " w-0"} 
-              `}
-      >
-        &nbsp;
-      </span>
-    </button>
-  );
-};
+import { 
+  CustomLink, 
+  CustomMobileLink 
+} from "../atoms/Links"
 
 
 
@@ -62,8 +22,6 @@ const Navbar = () => {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
-
-
 
   return (
     <header className="w-full flex items-center justify-between px-32 py-8 font-medium z-10
@@ -88,7 +46,7 @@ const Navbar = () => {
             <CustomLink className="mr-4" href="/" title="Home" />
             <CustomLink className="mx-4" href="/About" title="About" />
             <CustomLink className="mx-4" href="/Projects" title="Projects" />
-            <CustomLink className="ml-4" href="/Research" title="Articles" />
+            <CustomLink className="ml-4" href="/Research" title="Research" />
         </nav>
         <nav className="flex items-center justify-center flex-wrap lg:mt-2 ">
             <motion.a className='w-6 mx-3' href="https://www.linkedin.com/in/farhanbinfaisal" target={"_blank"} whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>

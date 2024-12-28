@@ -1,38 +1,18 @@
+import React from 'react'
 import Head from 'next/head'
-import { AnimatedText } from '@/components/AnimatedText'
-import { Layout } from '@/components/Layout'
-import React, { useEffect, useRef } from 'react'
+
+import { Skills } from '../organisms/Skills'
+import { AnimatedNumbers } from "../molecules/AnimatedNumbers"
+import { AnimatedText } from '../molecules/AnimatedText'
+import { Layout } from '../organisms/Layout'
+
+import Experience from '../organisms/Experience'
+import Education from '../organisms/Education'
+import TransitionEffect from "../atoms/TransitionEffect";
+
 import profilePic from '../../public/images/profile/comic-pic.png'
 import Image from 'next/image'
-import { useInView, useMotionValue, useSpring } from 'framer-motion'
-import Skills from '../components/Skills'
-import Experience from '../components/Experience'
-import Education from '../components/Education'
-import TransitionEffect from "@/components/TransitionEffect";
 
-const AnimatedNumbers = ({value}) => {
-    const ref = useRef(null);
-    const motionValue = useMotionValue(0);
-    const springValue = useSpring(motionValue, {duration: 3000})
-    const isInView = useInView(ref, {once: true});
-
-    useEffect(() => {
-        if (isInView) {
-            motionValue.set(value);
-        }
-    }, [motionValue, value, isInView])
-
-    useEffect(() => {
-        springValue.on("change", (latest) => {
-            if(ref.current && latest.toFixed(0) <= value){
-                ref.current.textContent = latest.toFixed(0);
-            }
-        })
-    }, [springValue, value])
-
-    return <span ref={ref}></span>
-
-}
 
 const About = () => {
   return (
@@ -50,18 +30,17 @@ const About = () => {
 
                 <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
                     <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-                        <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75"> BIOGRAPHY </h2>
+                        <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75"> ABOUT </h2>
                         <p  style={{font: 'medium', textAlign: 'justify' }}>
-                            Hi, I&apos;m Farhan, a full stack developer with a strong passion for creating beautiful, functional, and user-centered digital experiences. With 2 years of experience,  I am always looking for new and innovative ways to bring my clients&apos; visions to life
+                            Hi, I&apos;m Farhan, a Master&apos;s student in Data Science with a strong passion for leveraging technology to solve real-world problems. With expertise in machine learning, data visualization, and building automated pipelines, I enjoy uncovering insights from data and crafting efficient solutions.
                         </p>
 
                         <p className='my-4' style={{font: 'medium', textAlign: 'justify' }}>
-                            In addition to web development, I have delved a lot into data science. In doing so, I have honed my skills in implementing data pipelines, analyzing large datasets, data visualization, and fine-tuning machine learning models. 
-
+                            I also bring a year of experience in full-stack development, proficient in React, Node.js, and Next.js. My skills extend to deploying scalable applications, with hands-on knowledge of cloud platforms like AWS and Azure.
                         </p>
 
                         <p className='' style={{font: 'medium', textAlign: 'justify' }}>
-                            Whether I&apos;m working on a website, mobile app, or other data pipelines, I bring my whole hearted commitment to every project I work on.
+                            Whether I&apos;m developing user-centric web applications, optimizing machine learning models, or building end-to-end data pipelines, I am committed to delivering high-quality, impactful work.
                         </p>
                     </div>
 

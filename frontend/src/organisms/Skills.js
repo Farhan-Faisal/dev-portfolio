@@ -1,21 +1,8 @@
 import React, {useRef} from 'react'
-import {motion} from "framer-motion"
+import { Skill } from "../atoms/Skill"
+import { motion } from 'framer-motion'
 
-const Skill =({value, x, y}) => {
-    return (
-        <motion.div className='flex items-center justify-center rounded-full bg-dark py-3 px-6 shadow-dark absolute ' 
-            style={{color: 'white', fontWeight: 'bold'}}
-            whileHover={{scale: 1.05}}
-            initial={{x:0, y:0}}
-            whileInView={{x:x, y:y}}
-            transition={{duration: 3}}
-        >
-            {value}
-        </motion.div>
-    )
-}
-
-const Skills = () => {
+export const Skills = () => {
     const ref = useRef(null);
     return (
         <>
@@ -37,21 +24,18 @@ const Skills = () => {
                 Web
             </motion.div>
 
-            <Skill value="HTML" x='-22vw' y='-2vw'/>
-            <Skill value="CSS" x='-5vw' y='-10vw'/>
-            <Skill value="JavaScript" x='20vw' y='6vw'/>
-            <Skill value="ReactJS" x='0vw' y='12vw'/>
-            <Skill value="NextJS" x='-20vw' y='-15vw'/>
+            <Skill value="HTML, CSS, JavaScript" x='-22vw' y='-2vw'/>
+            <Skill value="Pandas, Numpy, Dask" x='-5vw' y='-10vw'/>
+            <Skill value="Scikit-Learn, Pytorch" x='20vw' y='6vw'/>
+            <Skill value="NextJS, ReactJS" x='0vw' y='12vw'/>
+            <Skill value="Altair, ggplot" x='-20vw' y='-15vw'/>
             <Skill value="NodeJS" x='15vw' y='-12vw'/>
             <Skill value="Azure Cloud" x='32vw' y='-5vw'/>
             <Skill value="AWS" x='0vw' y='-20vw'/>
             <Skill value="Python" x='-25vw' y='18vw'/>
             <Skill value="Machine Learning" x='18vw' y='18vw'/>
 
-            
         </div>
     </>
   )
-}
-
-export default Skills
+};

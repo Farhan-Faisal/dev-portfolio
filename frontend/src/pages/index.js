@@ -1,14 +1,14 @@
 import Head from 'next/head'
-import {Layout} from '@/components/Layout'
+import {Layout} from '@/organisms/Layout'
 import Image from 'next/image'
 import profilePic from "../../public/images/profile/comic-pic.png"
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
-import {AnimatedText} from '@/components/AnimatedText'
+import {AnimatedText} from '@/molecules/AnimatedText'
 import {motion} from "framer-motion"
 import Link from 'next/link'
-import { LinkArrow } from '../components/Icons'
-import HireMe from '../components/HireMe'
-import TransitionEffect from "@/components/TransitionEffect";
+import { LinkArrow } from '../atoms/Icons'
+import HireMe from '../molecules/HireMe'
+import TransitionEffect from "@/atoms/TransitionEffect";
 
 export default function Home() {
   return (
@@ -34,6 +34,7 @@ export default function Home() {
                 priority
               />
             </div>
+
             <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text="Turning vision into reality with code and design."
@@ -41,9 +42,11 @@ export default function Home() {
               />
 
               <p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
-                <span style={{ display: 'block' }}>• As a full-stack developer, I am dedicated to turning ideas into innovative web applications. </span>
-                <span style={{ display: 'block' }}>• As a data analyst, I can also cater to your data insight needs. </span>
-                <span style={{ display: 'block' }}>• Explore my latest projects, showcasing my expertise in development and analysis. </span>
+                <span style={{ display: 'block', fontSize: '18px' }}>• Data analyst skilled in visualization, machine learning, and automated pipelines. </span>
+                <br />
+                <span style={{ display: 'block', fontSize: '18px' }}>• Full-stack developer creating innovative web applications with React, Node.js, and Next.js. </span>
+                <br />
+                <span style={{ display: 'block', fontSize: '18px' }}>• Dive into my latest projects, showcasing my abilities development and data science and deliver impactful solutions. </span>
               </p>
 
               <div className="mt-2 flex items-center self-start lg:self-center">

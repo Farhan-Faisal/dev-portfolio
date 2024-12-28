@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion, useScroll} from "framer-motion"
 
-const LiIcon = ({reference}) => {
+export const LiIcon = ({reference}) => {
 
     const {scrollYProgress} = useScroll({
         target: reference,
@@ -18,5 +18,3 @@ const LiIcon = ({reference}) => {
     </figure>
   )
 }
-
-export default LiIcon

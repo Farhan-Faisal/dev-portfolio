@@ -1,8 +1,8 @@
 import '@/styles/globals.css'
 import {Montserrat} from "next/font/google"
 import Head from 'next/head'
-import NavBar from '../components/NavBar'
-import {Footer} from '@/components/Footer'
+import NavBar from '../organisms/NavBar'
+import {Footer} from '@/organisms/Footer'
 
 import { AnimatePresence } from "framer-motion";
 // pages/_app.js

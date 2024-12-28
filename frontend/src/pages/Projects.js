@@ -1,13 +1,13 @@
 import React from 'react'
 import Head from 'next/head'
-import { Layout } from '@/components/Layout'
-import { AnimatedText } from '@/components/AnimatedText'
+import { Layout } from '@/organisms/Layout'
+import { AnimatedText } from '@/molecules/AnimatedText'
 import Link from 'next/link'
-import { GithubIcon } from '@/components/Icons'
+import { GithubIcon } from '@/atoms/Icons'
 import project1Img from '../../public/images/projects/crypto-screener-cover-image.jpg'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
-import TransitionEffect from "@/components/TransitionEffect";
+import TransitionEffect from "@/atoms/TransitionEffect";
 
 const Framerimage = motion(Image);
 const FramerVideo = motion.video;
@@ -112,7 +112,7 @@ const Projects = () => {
             >
                 <Layout className="pt-16">
                 <AnimatedText
-                    text="Imagination Trumps Knowledge!"
+                    text="Turning Ideas into Impact!"
                     className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
                 />
                 <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
